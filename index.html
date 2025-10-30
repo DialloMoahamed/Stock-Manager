@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <input type="checkbox" id="menu-toggle" hidden>
+  <!-- sidebar début -->
+  <aside class="sidebar">
+    <h2 class="logo"><i class="fa-solid fa-chart-line"></i> Dashboard</h2>
+    <hr class="hr">
+    <ul class="menu">
+      <li><a href="#" class="close-menu"><i class="fa-solid fa-gauge-high"></i> Tableau de board</a></li>
+      <li><a href="Analytics.html" class="close-menu"><i class="fa-solid fa-chart-line"></i> Analytics</a></li>
+      <li><a href="Commandes.html" class="close-menu"><i class="fa-solid fa-cart-shopping"></i> Commandes</a></li>
+      <li><a href="Paramètres.html" class="close-menu"><i class="fa-solid fa-gears"></i> Paramètres</a></li>
+      <li><a href="Rapport.html" class="close-menu"><i class="fa-solid fa-chart-bar"></i> Rapport</a></li>
+      <li><a href="Notification.html" class="close-menu"><i class="fa-solid fa-bell"></i> Notification</a></li>
+    </ul>
+    <hr>
+    <div class="administration">
+      <div class="avatar1">
+        <i class="fa-solid fa-user"></i>
+      </div>
+      <div class="administration_text">
+        <h3>Administrateur</h3>
+        <p>Gestionnaire</p>
+      </div>
+    </div>
+    <div class="mon_profil">
+      <div class="avatar2">
+        <i class="fa-solid fa-user"></i>
+      </div>
+      <a href="#Profil"><h3>Mon profil</h3></a>
+    </div>
+
+    <!-- contenu caché début -->
+    <div id="Profil" class="Profil">
+      <div class="Profil-content">
+        <div class="enhaut">
+          <h2 class="titre">
+            <div class="avatar">
+              <i class="fa-solid fa-user"></i>
+            </div>
+            Mon Profil
+          </h2>
+          <a href="#" class="close">&times;</a>
+        </div>
+        <div class="contenu">
+          <div class="avatar1">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <button class="export-btn">
+            Changer la photo
+          </button>
+        </div>
+        <div class="input">
+            <div class="input-group">
+              <label>Nom :</label>
+              <input type="text" value="Administrateur">
+            </div>
+            <div class="input-group">
+              <label>Prénom :</label>
+              <input type="text" value="Jean">
+            </div>
+
+            <div class="input-group">
+              <label>Email :</label>
+              <input type="email" value="admin@dashboard.com">
+            </div>
+
+            <div class="input-group">
+              <label>Téléphone :</label>
+              <input type="tel" placeholder="+33 6 12 34 56 78">
+            </div>
+
+            <div class="input-group">
+              <label>Rôle :</label>
+              <input type="text" placeholder="Gestionnaire">
+            </div>
+
+            <div class="input-group">
+              <label>Dernière connexion :</label>
+              <input type="text" placeholder="15 Janvier 2024 à 14:30">
+            </div>
+        </div>
+        <div class="btn2">
+          <button class="export-btn">
+            Fermer
+          </button>
+          <div>
+          <button class="add-product-btn">
+            Sauvegarder
+        </button>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- contenu caché fin -->
+    <div class="deconection">
+        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+        <a href="login.html">Déconnexion</a><p>
+    </div>
+  </aside>
+  <!-- sidebar fin -->
+
+  <!-- Header début -->
+  <header class="header">
+    <div class="header-left">
+       <label for="menu-toggle" id="toggle-btn">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+      <h1>Gestion de stock - Produits Électroniques</h1>
+    </div>
+    <div class="header-right">
+       <a href="Notification.html"><img src="cloch.png" alt="" class="cloch"></a>
+      <div class="avatar">
+        <i class="fa-solid fa-user"></i>
+      </div>
+      <p>Administrateur</p>
+    </div>
+  </header>
+  <!-- Header fin -->
+
+  <!-- main début -->
+  <main class="content">
+    <div class="content_text">
+      <h1>Tableau de Board Principal</h1>
+      <p>Gestion des stocks de produits Électroniques</p>
+    </div>
+    <!-- Grid début -->
+    <section class="grid-4">
+      <div class="card1">
+        <div class="card1_icon">
+          <i class="fa-solid fa-boxes-stacked"></i>
+        </div>
+        <div class="card1_text">
+          <h1>1,234</h1>
+          <p>Produits en stock</p>
+        </div>
+      </div>
+      <div class="card1">
+        <div class="card2_icon">
+          <i class="fa-solid fa-triangle-exclamation"></i>
+        </div>
+        <div class="card1_text">
+          <h1>23</h1>
+          <p>Stock Faible</p>
+        </div>
+      </div>
+      <div class="card1">
+        <div class="card3_icon">
+          <i class="fa-solid fa-euro-sign"></i>
+        </div>
+        <div class="card1_text">
+          <h1>€45,678</h1>
+          <p>Valeur Totale</p>
+        </div>
+      </div>
+      <div class="card1">
+        <div class="card4_icon">
+          <i class="fa-solid fa-truck"></i>
+        </div>
+        <div class="card1_text">
+          <h1>12</h1>
+          <p>Commandes en attente</p>
+        </div>
+      </div>
+    </section>
+    <!-- Grid fin -->
+    <div class="stock">
+    <div class="actions">
+      <h2>Gestion des Stocks</h2>
+        <div class="search-box">
+            <input type="text" placeholder="🔍 Rechercher un produit...">
+        </div>
+        <div>
+          <button class="add-product-btn">
+            <i class="fas fa-plus"></i> Ajouter Produit
+        </button>
+        <button class="export-btn">
+            <i class="fas fa-file-export"></i> Exporter
+        </button>
+        </div>
+        
+    </div>
+    <table class="product-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>PRODUIT</th>
+                <th>CATÉGORIE</th>
+                <th>STOCK</th>
+                <th>PRIX</th>
+                <th>STATUT</th>
+                <th>ACTIONS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="product-row">
+                <td>#001</td>
+                <td>
+                    <div class="product-details">
+                      <div class="product-details_icon">
+                        <i class="fas fa-laptop product-icon"></i>
+                      </div>
+                        <div>
+                            <strong>MacBook Pro 16"</strong>
+                            <span>Apple - M3 Pro</span>
+                        </div>
+                    </div>
+                </td>
+                <td><span class="badge badge-laptop">LAPTOP</span></td>
+                <td><span class="stock-level stock-good">15</span></td>
+                <td>€2,899</td>
+                <td><span class="badge badge-active">Actif</span></td>
+                <td class="actions-icons">
+                    <i class="fas fa-edit action-icon"></i>
+                    <i class="fas fa-trash action-icon"></i>
+                </td>
+            </tr>
+
+            <tr class="product">
+                <td>#002</td>
+                <td>
+                    <div class="product-details">
+                      <div class="product-details_icon">
+                        <i class="fas fa-mobile-alt product-icon"></i>
+                      </div>
+                        
+                        <div>
+                            <strong>iPhone 15 Pro</strong>
+                            <span>Apple - 128GB</span>
+                        </div>
+                    </div>
+                </td>
+                <td><span class="badge badge-smartphone">SMARTPHONE</span></td>
+                <td><span class="stock-level stock-moderate">8</span></td>
+                <td>€1,199</td>
+                <td><span class="badge badge-active">Actif</span></td>
+                <td class="actions-icons">
+                    <i class="fas fa-edit action-icon"></i>
+                    <i class="fas fa-trash action-icon"></i>
+                </td>
+            </tr>
+
+             <tr class="product">
+                <td>#003</td>
+                <td>
+                    <div class="product-details">
+                      <div class="product-details_icon">
+                        <i class="fas fa-headphones product-icon"></i>
+                      </div>
+                        
+                        <div>
+                            <strong>AirPods Pro 2</strong>
+                            <span>Apple - USB-C</span>
+                        </div>
+                    </div>
+                </td>
+                <td><span class="badge badge-audio">AUDIO</span></td>
+                <td><span class="stock-level stock-low">3</span></td>
+                <td>€279</td>
+                <td><span class="badge badge-low-stock">Stock Faible</span></td>
+                <td class="actions-icons">
+                    <i class="fas fa-edit action-icon"></i>
+                    <i class="fas fa-trash action-icon"></i>
+                </td>
+            </tr>
+
+            <tr class="product">
+                <td>#004</td>
+                <td>
+                    <div class="product-details">
+                      <div class="product-details_icon">
+                        <i class="fas fa-tablet-alt product-icon"></i>
+                      </div>
+                        <div>
+                            <strong>iPad Air</strong>
+                            <span>Apple - 64GB</span>
+                        </div>
+                    </div>
+                </td>
+                <td><span class="badge badge-tablette">TABLETTE</span></td>
+                <td><span class="stock-level stock-good">22</span></td>
+                <td>€649</td>
+                <td><span class="badge badge-active">Actif</span></td>
+                <td class="actions-icons">
+                    <i class="fas fa-edit action-icon"></i>
+                    <i class="fas fa-trash action-icon"></i>
+                </td>
+            </tr>
+
+            <tr class="product">
+                <td>#005</td>
+                <td>
+                    <div class="product-details">
+                      <div class="product-details_icon">
+                        <i class="fas fa-tv product-icon"></i>
+                      </div>
+                        <div>
+                            <strong>Apple TV 4K</strong>
+                            <span>128GB - WiFi</span>
+                        </div>
+                    </div>
+                </td>
+                <td><span class="badge badge-tv">TV</span></td>
+                <td><span class="stock-level stock-moderate">12</span></td>
+                <td>€179</td>
+                <td><span class="badge badge-active">Actif</span></td>
+                <td class="actions-icons">
+                    <i class="fas fa-edit action-icon"></i>
+                    <i class="fas fa-trash action-icon"></i>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+   
+</main>
+<!-- main fin -->
+</body>
+</html>

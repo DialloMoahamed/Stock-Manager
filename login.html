@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connexion - StockManager</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="container">
+    <div class="login-box">
+      <div class="login-left">
+        <h2>Connexion à StockManager Dashboard</h2>
+        <form action="index.html" method="get">
+            <div class="première_partie">
+                <input type="text" placeholder="Nom d'utilisateur ou email" name="username" required>
+                <input type="password" placeholder="Mot de passe" name="password" required>
+            </div>
+          <div class="souvenir">
+            <input type="checkbox" id="souvenir" name="souvenir" required>
+            <label for="souvenir">Se souvenir de moi</label>
+          </div>
+          <button type="submit" class="btn">Se connecter</button>
+
+          <div class="lien">
+            <a href="#">Mot de passe oublié ? <span>Réinitialiser</span></a>
+            <a href="signin.html">Vous n'avez pas de compte ? <span>Inscrivez-vous</span></a>
+          </div>
+        </form>
+      </div>
+
+      <div class="login-right">
+        <div class="circle">SM</div>
+        <h3>Bienvenue dans <br><span>StockManager</span></h3>
+        <p>Gérez vos appareils électroniques, vos entrées et vos sorties de stock facilement avec une interface claire et rapide.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

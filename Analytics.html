@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <input type="checkbox" id="menu-toggle" hidden>
+  <aside class="sidebar">
+    <h2 class="logo"><i class="fa-solid fa-chart-line"></i> Dashboard</h2>
+    <hr class="hr">
+    <ul class="menu">
+      <li><a href="index.html" class="close-menu"><i class="fa-solid fa-gauge-high"></i> Tableau de board</a></li>
+      <li><a href="#" class="close-menu"><i class="fa-solid fa-chart-line"></i> Analytics</a></li>
+      <li><a href="Commandes.html" class="close-menu"><i class="fa-solid fa-cart-shopping"></i> Commandes</a></li>
+      <li><a href="Paramètres.html" class="close-menu"><i class="fa-solid fa-gears"></i> Paramètres</a></li>
+      <li><a href="Rapport.html" class="close-menu"><i class="fa-solid fa-chart-bar"></i> Rapport</a></li>
+      <li><a href="Notification.html" class="close-menu"><i class="fa-solid fa-bell"></i> Notification</a></li>
+    </ul>
+     <hr>
+    <div class="administration">
+      <div class="avatar1">
+        <i class="fa-solid fa-user"></i>
+      </div>
+      <div class="administration_text">
+        <h3>Administrateur</h3>
+        <p>Gestionnaire</p>
+      </div>
+    </div>
+    <div class="mon_profil">
+      <div class="avatar2">
+        <i class="fa-solid fa-user"></i>
+      </div>
+      <a href="#Profil"><h3>Mon profil</h3></a>
+    </div>
+
+    <!-- contenu caché début -->
+    <div id="Profil" class="Profil">
+      <div class="Profil-content">
+        <div class="enhaut">
+          <h2 class="titre">
+            <div class="avatar">
+              <i class="fa-solid fa-user"></i>
+            </div>
+            Mon Profil
+          </h2>
+          <a href="#" class="close">&times;</a>
+        </div>
+        <div class="contenu">
+          <div class="avatar1">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <button class="export-btn">
+            Changer la photo
+          </button>
+        </div>
+        <div class="input">
+            <div class="input-group">
+              <label>Nom :</label>
+              <input type="text" value="Administrateur">
+            </div>
+            <div class="input-group">
+              <label>Prénom :</label>
+              <input type="text" value="Jean">
+            </div>
+
+            <div class="input-group">
+              <label>Email :</label>
+              <input type="email" value="admin@dashboard.com">
+            </div>
+
+            <div class="input-group">
+              <label>Téléphone :</label>
+              <input type="tel" placeholder="+33 6 12 34 56 78">
+            </div>
+
+            <div class="input-group">
+              <label>Rôle :</label>
+              <input type="text" placeholder="Gestionnaire">
+            </div>
+
+            <div class="input-group">
+              <label>Dernière connexion :</label>
+              <input type="text" placeholder="15 Janvier 2024 à 14:30">
+            </div>
+        </div>
+        <div class="btn2">
+          <button class="export-btn">
+            Fermer
+          </button>
+          <div>
+          <button class="add-product-btn">
+            Sauvegarder
+        </button>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- contenu caché fin -->
+    <div class="deconection">
+        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+        <a href="login.html">Déconnexion</a><p>
+    </div>
+  </aside>
+  <header class="header">
+    <div class="header-left">
+       <label for="menu-toggle" id="toggle-btn">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+      <h1>Gestion de stock - Produits Électroniques</h1>
+    </div>
+    <div class="header-right">
+      <a href="Notification.html"><img src="cloch.png" alt="" class="cloch"></a>
+      <div class="avatar">
+        <i class="fa-solid fa-user"></i>
+      </div>
+      <p>Administrateur</p>
+    </div>
+  </header>
+  <main class="content">
+    <div class="content_text">
+      <h1><i class="fa-solid fa-chart-line"></i> Analytics & Rapport</h1>
+      <p>Analyse complète des performance et tendences</p>
+    </div>
+      <section class="grid-4">
+      <div class="card1">
+        <div class="card1_icon">
+          <i class="fa-solid fa-chart-line"></i>
+        </div>
+        <div class="card1_text">
+          <h1>€45,678</h1>
+          <p>Chiffres d'affaires</p>
+          <span class="pourcentage_positive">+12.5%</span>
+        </div>
+      </div>
+      <div class="card1">
+        <div class="card3_icon">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+        <div class="card1_text">
+          <h1>1,234</h1>
+          <p>Commandes</p>
+          <span class="pourcentage_positive">+8.2%</span>
+        </div>
+      </div>
+      <div class="card1">
+        <div class="card5_icon">
+          <i class="fa-solid fa-users-line"></i>
+        </div>
+        <div class="card1_text">
+          <h1>856</h1>
+          <p>Nouveaux clients</p>
+          <span class="pourcentage_negative">-2.1%</span>
+        </div>
+      </div>
+      <div class="card1">
+        <div class="card6_icon">
+          <i class="fa-solid fa-percent"></i>
+        </div>
+        <div class="card1_text">
+          <h1>3.4%</h1>
+          <p>Taux de conversion</p>
+          <span class="pourcentage_positive">+0.3%</span>
+        </div>
+      </div>
+    </section>
+    <section class="charte">
+      <div class="evolution_des_vente">
+        <div class="entete">
+          <h2 class="entete_h3"><i class="fa-solid fa-chart-area"></i> Évolution des ventes</h2>
+          <button type="button" class="entete_button">30 derniers jours <i class="fa-solid fa-chevron-down"></i></button>
+        </div>
+        <div class="body">
+          <div class="carte">
+          <div class="carte1">
+            <div class="Jan"></div> 
+            <div class="carte1_text">
+              <span class="span1">Jan</span>
+              <span class="span2">€8.500</span>
+            </div>
+          </div>
+          <div class="carte1">
+            <div class="Fev"></div> 
+            <div class="carte1_text">
+              <span class="span1">Fev</span>
+              <span class="span2">€9.200</span>
+            </div>
+          </div>
+          <div class="carte1">
+            <div class="Mar"></div> 
+            <div class="carte1_text">
+              <span class="span1">Mar</span>
+              <span class="span2">€7.800</span>
+            </div>
+          </div>
+          <div class="carte1">
+            <div class="Avr"></div> 
+            <div class="carte1_text">
+              <span class="span1">Avr</span>
+              <span class="span2">€9.500</span>
+            </div>
+          </div>
+          <div class="carte1">
+            <div class="Mai"></div> 
+            <div class="carte1_text">
+              <span class="span1">Mai</span>
+              <span class="span2">€8.800</span>
+            </div>
+          </div>
+          <div class="carte1">
+            <div class="Jun"></div> 
+            <div class="carte1_text">
+              <span class="span1">Jun</span>
+              <span class="span2">€9.600</span>
+            </div>
+          </div>
+          <div class="carte1">
+            <div class="Jul"></div> 
+            <div class="carte1_text">
+              <span class="span1">Jul</span>
+              <span class="span2">€8.200</span>
+            </div>
+          </div>
+          <div class="carte1">
+            <div class="Aou"></div> 
+            <div class="carte1_text">
+              <span class="span1">Aou</span>
+              <span class="span2">€8.900</span>
+            </div>
+          </div>
+          <div class="carte1">
+            <div class="Sept"></div> 
+            <div class="carte1_text">
+              <span class="span1">Sept</span>
+              <span class="span2">€8.900</span>
+            </div>
+          </div>
+          <div class="carte1">
+            <div class="Oct"></div> 
+            <div class="carte1_text">
+              <span class="span1">Oct</span>
+              <span class="span2">€8.900</span>
+            </div>
+          </div>
+          <div class="carte1">
+            <div class="Nov"></div> 
+            <div class="carte1_text">
+              <span class="span1">Nov</span>
+              <span class="span2">€8.900</span>
+            </div>
+          </div>
+          <div class="carte1">
+            <div class="Dec"></div> 
+            <div class="carte1_text">
+              <span class="span1">Dec</span>
+              <span class="span2">€8.900</span>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="pied">
+          <div class="legend1">
+            <div class="bleu"></div>
+            <p>Ventes Réelles</p>
+          </div>
+          <div class="legend2">
+            <span class="vert"></span>
+            <p>Objectifs</p>
+          </div>
+        </div>
+      </div>
+      <div class="reparation_par_categorie">
+        <div class="entete">
+          <h2><i class="fa-solid fa-chart-bar"></i> Réparation par Catégorie</h2>
+        </div>
+        <div class="bodye">
+          <div class="un">
+            <div class="un_text">
+              <h3>Smartphones</h3>
+              <span>€15.980</span>
+            </div>
+            <div class="pourcentage">
+              <div class="pourcent"></div>
+              <span>35%</span>
+            </div>
+          </div>
+          <div class="un">
+            <div class="un_text">
+              <h3>Laptops</h3>
+              <span>€11.415</span>
+            </div>
+            <div class="pourcentage">
+              <div class="pourcent"></div>
+              <span>25%</span>
+            </div>
+          </div>
+          <div class="un">
+            <div class="un_text">
+              <h3>Tablettes</h3>
+              <span>€9.132</span>
+            </div>
+            <div class="pourcentage">
+              <div class="pourcent"></div>
+              <span>20%</span>
+            </div>
+          </div>
+          <div class="un">
+            <div class="un_text">
+              <h3>Accessoires</h3>
+              <span>€9.132</span>
+            </div>
+            <div class="pourcentage">
+              <div class="pourcent"></div>
+              <span>20%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="produit">
+      <div class="actions">
+        <h2><i class="fa-solid fa-trophy"></i> Top Produits</h2>
+        <button type="button" class="entete_button">Par ventes <i class="fa-solid fa-chevron-down"></i></button>
+      </div>
+      <table class="product-table">
+        <thead>
+            <tr>
+                <th>Rang</th>
+                <th>Produit</th>
+                <th>Vente</th>
+                <th>Revenus</th>
+                <th>Marge</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="product-row">
+                <td class="rang1">1</td>
+                <td>
+                    <div class="product-details">
+                        <i class="fas fa-mobile-alt product-icon"></i>
+                        <strong>iPhone 15 Pro</strong>
+                    </div>
+                </td>
+                <td>234</td>
+                <td>€280,866</td>
+                <td>€42,130</td>
+            </tr>
+            <tr class="product">
+                <td class="rang2">2</td>
+                <td>
+                    <div class="product-details">
+                      <i class="fas fa-laptop product-icon"></i>
+                      <strong>MacBook Pro</strong>
+                    </div>
+                </td>
+                <td>89</td>
+                <td>€257,911</td>
+                <td>€51,582</td>
+            </tr>
+
+             <tr class="product">
+                <td class="rang3">3</td>
+                <td>
+                    <div class="product-details">
+                      <i class="fas fa-headphones product-icon"></i>
+                      <strong>AirPods Pro 2</strong>
+                    </div>
+                </td>
+                <td>445</td>
+                <td>€124,155</td>
+                <td>€18,623</td>
+            </tr>
+          </tbody>  
+      </table>
+    </section>
+  </main>
+</body>
+</html>
