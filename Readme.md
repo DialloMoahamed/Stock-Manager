@@ -19,7 +19,7 @@ Ce projet marque l’aboutissement de votre parcours en HTML et CSS. Il vous off
 * J'ai aussi apris à débuguer mon propre code
 
 ## Lien du Github Page
-
+https://diallomoahamed.github.io/Stock-Manager/
 
 ## Capture du projet
 
@@ -29,9 +29,6 @@ Ce projet marque l’aboutissement de votre parcours en HTML et CSS. Il vous off
 
 ### Format Tablette 
 ![alt text](tablette.png)
-
-
-
 
 # Auteure : Mohamed Attahir Ibrahim Diallo
 
