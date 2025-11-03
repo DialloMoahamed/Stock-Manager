@@ -70,6 +70,7 @@ body {
   color: var(--text-white);
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 #menu-toggle:checked ~ .sidebar {
@@ -87,7 +88,7 @@ body {
   font-size: 2rem;
   padding: 2rem;
   text-align: center;
-  gap: 3em;
+
 }
 .sidebar .logo i {
   font-size: 2rem;
@@ -96,7 +97,6 @@ body {
 
 .sidebar .menu {
   list-style: none;
-  margin-bottom: 17em;
   padding: 1rem;
 }
 
@@ -497,7 +497,9 @@ body {
 .stock:hover {
   transform: translateY(-5px);
   box-shadow: 0 0 15px var(--shadow-lg);
-  cursor: pointer;
+}
+.stock tr:hover {
+  background-color: var(--border-color);
 }
 
 .stock h2 {
@@ -552,6 +554,7 @@ body {
     background-color: white;
     color: #4a5568;
     border: 1px solid #e2e8f0;
+    text-decoration: none;
 }
 
 .add-product-btn i, .export-btn i {
@@ -1391,6 +1394,10 @@ input[type="text"]:focus {
   margin: 20px auto;
   transition: all 0.5s ease;
 }
+.paramètre .body {
+  display: flex;
+  gap: 1em;
+}
 
 .paramètre:hover {
   transform: translateY(-5px);
@@ -1540,6 +1547,50 @@ input:checked + .slider::before {
   font-weight: bold;
 }
 
+.modifier_titre {
+  margin-top: 3em;
+}
+.modifier_status {
+  margin-top: 1em;
+}
+
+.Adress_livraison {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.Notes_livraison {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 3em;
+}
+.Adress_livraison textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border-color: var(--border-color);
+}
+.Notes_livraison textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border-color: var(--border-color);
+}
+
+.Date_livraison {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Date_livraison input {
+  padding: 10px;
+  border-radius: 5px;
+  border-color: var(--border-color);
+}
+
 
 /* RESPONSIVE  */
 
@@ -1626,6 +1677,11 @@ input:checked + .slider::before {
   }
 
   .cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .paramètre .body {
     display: flex;
     flex-direction: column;
   }

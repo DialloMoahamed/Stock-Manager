@@ -20,7 +20,8 @@
       <li><a href="Rapport.html" class="close-menu"><i class="fa-solid fa-chart-bar"></i> Rapport</a></li>
       <li><a href="Notification.html" class="close-menu"><i class="fa-solid fa-bell"></i> Notification</a></li>
     </ul>
-     <hr>
+    <hr>
+    <div class="presentation">
     <div class="administration">
       <div class="avatar1">
         <i class="fa-solid fa-user"></i>
@@ -103,6 +104,7 @@
     <div class="deconection">
         <i class="fa-solid fa-arrow-right-from-bracket"></i>
         <a href="login.html">Déconnexion</a><p>
+    </div>
     </div>
   </aside>
   <header class="header">
@@ -216,9 +218,9 @@
         <a href="#voir_detail-btn" class="voir_detail-btn">
           <i class="fa-solid fa-eye"></i> Voir détails
         </a>
-        <button class="export-btn">
-            <i class="fas fa-edit action-icon"></i> Modifier
-        </button>
+        <a href="#modifier-btn" class="export-btn">
+          <i class="fas fa-edit action-icon"></i> Modifier
+        </a>
         <button class="Traiter-btn">
             <i class="fa-solid fa-check"></i> Traiter
         </button>
@@ -251,9 +253,9 @@
         <a href="#voir_detail-btn" class="voir_detail-btn">
           <i class="fa-solid fa-eye"></i> Voir détails
         </a>
-        <button class="export-btn">
-            <i class="fas fa-edit action-icon"></i> Modifier
-        </button>
+        <a href="#modifier-btn" class="export-btn">
+          <i class="fas fa-edit action-icon"></i> Modifier
+        </a>
         <button class="expedier-btn">
             <i class="fa-solid fa-truck"></i> Expedier
         </button>
@@ -373,6 +375,62 @@
     </div>
     </div>
     <!-- contenu caché fin -->
+
+     <!-- contenu caché2 début -->
+    <div id="modifier-btn" class="Profil">
+      <div class="Profil-content">
+        <div class="enhaut">
+          <h2 class="titre">
+            <i class="fas fa-edit action-icon"></i>
+            Modifier la Commande
+          </h2>
+          <a href="#" class="close">&times;</a>
+        </div>
+        <div class="modifier_titre">
+          <h3>Status de la commande</h3>
+        </div>
+        <div class="modifier_status">
+        <div class="filtre-item">
+            <label for="periode">Status :</label>
+            <select id="periode">
+              <option>En attente</option>
+              <option>En cours</option>
+              <option>Expédier</option>
+              <option>livré</option>
+            </select>
+        </div>
+        </div>
+        <div class="modifier_titre">
+          <h3>Informations de livraison</h3>
+        </div>
+        <div class="Adress_livraison">
+          <label for="Adress">Adress de livraison :</label>
+          <textarea name="" id="">123 Rue de la paix, 75001 Paris</textarea>
+        </div>
+        <div class="Date_livraison">
+          <label for="Date">Date de livraison prévue :</label>
+          <input type="date" name="Date" id="">
+        </div>
+        <div class="modifier_titre">
+          <h3>Notes</h3>
+        </div>
+        <div class="Notes_livraison">
+          <label for="Adress">Notes internes :</label>
+          <textarea name="" id="" placeholder="Notes internes pour l'équipe..."></textarea>
+        </div>
+        <div class="btn2">
+          <button class="export-btn">
+            Annuler
+          </button>
+          <div>
+          <button class="add-product-btn">
+            Sauvegarder
+        </button>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- contenu caché2 fin -->
   </main>
 </body>
 </html>
