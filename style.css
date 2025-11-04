@@ -392,15 +392,14 @@ body {
   background-color: var(--text-white);
   padding: 1.5em;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: all 0.5s ease;
+  border: 1px solid var(--border-color);
 }
 
 
 .card1:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0 15px var(--shadow-lg);
-  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -489,14 +488,14 @@ body {
     margin: 20px auto;
     background-color: white;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--border-color);
+    
     transition: all 0.5s ease;
 }
 
   
 .stock:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 15px var(--shadow-lg);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 .stock tr:hover {
   background-color: var(--border-color);
@@ -728,13 +727,10 @@ body {
 
 .evolution_des_vente {
   width: 60%;
-  transition: all 0.5s ease;
 }
 
 .evolution_des_vente:hover {
-  transform: translateY(-5px);
   box-shadow: 0 0 15px var(--shadow-lg);
-  cursor: pointer;
 }
 
 .entete {
@@ -939,14 +935,11 @@ body {
 
 .reparation_par_categorie {
   width: 40%;
-  transition: all 0.5s ease;
 }
 
 
 .reparation_par_categorie:hover {
-  transform: translateY(-5px);
   box-shadow: 0 0 15px var(--shadow-lg);
-  cursor: pointer;
 }
 
 .bodye {
@@ -991,16 +984,9 @@ body {
     margin: 20px auto;
     background-color: white;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: all 0.5s ease;
+    border: 1px solid var(--border-color);
 }
 
-
-.produit:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 15px var(--shadow-lg);
-  cursor: pointer;
-}
 
 .rang1 {
   width: 1.5em;
@@ -1050,15 +1036,8 @@ body {
   background-color: var(--text-white);
   padding: 1.5em;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: all 0.5s ease;
+  border: 1px solid var(--border-color);
   margin: 40px auto;
-}
-
-.status:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 15px var(--shadow-lg);
-  cursor: pointer;
 }
 
 .filtre-item {
@@ -1120,15 +1099,8 @@ input[type="text"]:focus {
   background-color: var(--text-white);
   padding: 1.5em;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: all 0.5s ease;
+  border: 1px solid var(--border-color);
   margin: 40px auto;
-}
-
-.commande:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 15px var(--shadow-lg);
-  cursor: pointer;
 }
 
 .commande_text {
@@ -1234,7 +1206,6 @@ input[type="text"]:focus {
   background-color: var(--text-white);
   padding: 1.5em;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: all 0.5s ease;
   margin: 40px auto;
   border-left: 4px solid var(--danger-color);
@@ -1249,7 +1220,6 @@ input[type="text"]:focus {
   background-color: var(--text-white);
   padding: 1.5em;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: all 0.5s ease;
   margin: 40px auto;
   border-left: 4px solid var(--primary-color);
@@ -1264,16 +1234,8 @@ input[type="text"]:focus {
   background-color: var(--text-white);
   padding: 1.5em;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: all 0.5s ease;
   margin: 40px auto;
-}
-   
-
-.Alert:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 15px var(--shadow-lg);
-  cursor: pointer;
 }
 
 .cercle_icon {
@@ -1392,17 +1354,10 @@ input[type="text"]:focus {
 .paramètre {
   width: 100%;
   margin: 20px auto;
-  transition: all 0.5s ease;
 }
 .paramètre .body {
   display: flex;
   gap: 1em;
-}
-
-.paramètre:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 15px var(--shadow-lg);
-  cursor: pointer;
 }
 
 .notif {
@@ -1420,7 +1375,7 @@ input[type="text"]:focus {
 .switch {
   position: relative;
   display: inline-block;
-  width: 58px;
+  width: 50px;
   height: 24px;
 }
 
@@ -1439,7 +1394,7 @@ input[type="text"]:focus {
   bottom: 0;
   background-color: #ccc;
   transition: 0.4s;
-  border-radius: 34px;
+  border-radius: 24px;
 }
 
 .slider::before {
@@ -1459,7 +1414,7 @@ input:checked + .slider {
 }
 
 input:checked + .slider::before {
-  transform: translateX(24px);
+  transform: translateX(25px);
 }
 
 
